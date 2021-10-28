@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="wiki.primo.generator.mybatis.plus.cae.mapper.ConstructionPermitInformationMapper">
+	<!--开启二级缓存-->
+	<cache/>
+
+	<resultMap id="BaseResultMap" type="wiki.primo.generator.mybatis.plus.cae.entity.ConstructionPermitInformation">
+		<id column="id" property="id" />
+		<result column="project_name" property="projectName" />
+		<result column="project_position" property="projectPosition" />
+		<result column="build_company" property="buildCompany" />
+		<result column="contact_phone" property="contactPhone" />
+		<result column="approval_time" property="approvalTime" />
+		<result column="expect_investment" property="expectInvestment" />
+		<result column="begin_time" property="beginTime" />
+		<result column="end_time" property="endTime" />
+		<result column="permit_number" property="permitNumber" />
+		<result column="construction_company" property="constructionCompany" />
+		<result column="design_company" property="designCompany" />
+		<result column="supervise_company" property="superviseCompany" />
+		<result column="create_time" property="createTime" />
+		<result column="creator" property="creator" />
+		<result column="update_time" property="updateTime" />
+		<result column="updater" property="updater" />
+		<result column="data_location" property="dataLocation" />
+	</resultMap>
+
+    <!-- 通用查询结果列-->
+    <sql id="Base_Column_List">
+        `id`, `project_name` AS `projectName`, `project_position` AS `projectPosition`, `build_company` AS `buildCompany`, `contact_phone` AS `contactPhone`, `approval_time` AS `approvalTime`, `expect_investment` AS `expectInvestment`, `begin_time` AS `beginTime`, `end_time` AS `endTime`, `permit_number` AS `permitNumber`, `construction_company` AS `constructionCompany`, `design_company` AS `designCompany`, `supervise_company` AS `superviseCompany`, `create_time` AS `createTime`, `creator`, `update_time` AS `updateTime`, `updater`, `data_location` AS `dataLocation`
+    </sql>
+</mapper>

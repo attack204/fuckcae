@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="wiki.primo.generator.mybatis.plus.cae.mapper.ProjectInformationMapper">
+	<!--开启二级缓存-->
+	<cache/>
+
+	<resultMap id="BaseResultMap" type="wiki.primo.generator.mybatis.plus.cae.entity.ProjectInformation">
+		<id column="id" property="id" />
+		<result column="project_name" property="projectName" />
+		<result column="filling_time" property="fillingTime" />
+		<result column="administrative_area" property="administrativeArea" />
+		<result column="competent_department" property="competentDepartment" />
+		<result column="project_location" property="projectLocation" />
+		<result column="construction_company" property="constructionCompany" />
+		<result column="construction_company_social_credit_certificate_number" property="constructionCompanySocialCreditCertificateNumber" />
+		<result column="winning_company" property="winningCompany" />
+		<result column="winning_company_social_credit_certificate_number" property="winningCompanySocialCreditCertificateNumber" />
+		<result column="winning_time" property="winningTime" />
+		<result column="winning_money" property="winningMoney" />
+		<result column="begin_time" property="beginTime" />
+		<result column="create_time" property="createTime" />
+		<result column="creator" property="creator" />
+		<result column="update_time" property="updateTime" />
+		<result column="updater" property="updater" />
+		<result column="data_location" property="dataLocation" />
+	</resultMap>
+
+    <!-- 通用查询结果列-->
+    <sql id="Base_Column_List">
+        `id`, `project_name` AS `projectName`, `filling_time` AS `fillingTime`, `administrative_area` AS `administrativeArea`, `competent_department` AS `competentDepartment`, `project_location` AS `projectLocation`, `construction_company` AS `constructionCompany`, `construction_company_social_credit_certificate_number` AS `constructionCompanySocialCreditCertificateNumber`, `winning_company` AS `winningCompany`, `winning_company_social_credit_certificate_number` AS `winningCompanySocialCreditCertificateNumber`, `winning_time` AS `winningTime`, `winning_money` AS `winningMoney`, `begin_time` AS `beginTime`, `create_time` AS `createTime`, `creator`, `update_time` AS `updateTime`, `updater`, `data_location` AS `dataLocation`
+    </sql>
+</mapper>

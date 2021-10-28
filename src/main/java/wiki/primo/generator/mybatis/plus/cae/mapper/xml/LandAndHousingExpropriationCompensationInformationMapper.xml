@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="wiki.primo.generator.mybatis.plus.cae.mapper.LandAndHousingExpropriationCompensationInformationMapper">
+	<!--开启二级缓存-->
+	<cache/>
+
+	<resultMap id="BaseResultMap" type="wiki.primo.generator.mybatis.plus.cae.entity.LandAndHousingExpropriationCompensationInformation">
+		<id column="id" property="id" />
+		<result column="compensate_company" property="compensateCompany" />
+		<result column="reclaimed_land_location" property="reclaimedLandLocation" />
+		<result column="reclaimed_land_area" property="reclaimedLandArea" />
+		<result column="land_certificate_number" property="landCertificateNumber" />
+		<result column="land_purpose" property="landPurpose" />
+		<result column="buildings_and_ancillary_buildings_area" property="buildingsAndAncillaryBuildingsArea" />
+		<result column="evaluate_land_value" property="evaluateLandValue" />
+		<result column="evaluate_aboveground_buildings_and_appurtenances_value" property="evaluateAbovegroundBuildingsAndAppurtenancesValue" />
+		<result column="compensate_land_value" property="compensateLandValue" />
+		<result column="compensate_aboveground_buildings_and_appurtenances_value" property="compensateAbovegroundBuildingsAndAppurtenancesValue" />
+		<result column="create_time" property="createTime" />
+		<result column="creator" property="creator" />
+		<result column="update_time" property="updateTime" />
+		<result column="updater" property="updater" />
+		<result column="data_location" property="dataLocation" />
+	</resultMap>
+
+    <!-- 通用查询结果列-->
+    <sql id="Base_Column_List">
+        `id`, `compensate_company` AS `compensateCompany`, `reclaimed_land_location` AS `reclaimedLandLocation`, `reclaimed_land_area` AS `reclaimedLandArea`, `land_certificate_number` AS `landCertificateNumber`, `land_purpose` AS `landPurpose`, `buildings_and_ancillary_buildings_area` AS `buildingsAndAncillaryBuildingsArea`, `evaluate_land_value` AS `evaluateLandValue`, `evaluate_aboveground_buildings_and_appurtenances_value` AS `evaluateAbovegroundBuildingsAndAppurtenancesValue`, `compensate_land_value` AS `compensateLandValue`, `compensate_aboveground_buildings_and_appurtenances_value` AS `compensateAbovegroundBuildingsAndAppurtenancesValue`, `create_time` AS `createTime`, `creator`, `update_time` AS `updateTime`, `updater`, `data_location` AS `dataLocation`
+    </sql>
+</mapper>

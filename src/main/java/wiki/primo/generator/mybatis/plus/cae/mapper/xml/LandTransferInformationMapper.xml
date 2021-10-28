@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="wiki.primo.generator.mybatis.plus.cae.mapper.LandTransferInformationMapper">
+	<!--开启二级缓存-->
+	<cache/>
+
+	<resultMap id="BaseResultMap" type="wiki.primo.generator.mybatis.plus.cae.entity.LandTransferInformation">
+		<id column="id" property="id" />
+		<result column="transfer_company_name" property="transferCompanyName" />
+		<result column="company_position" property="companyPosition" />
+		<result column="transfer_phone" property="transferPhone" />
+		<result column="assignee_company_name" property="assigneeCompanyName" />
+		<result column="assignee_phone" property="assigneePhone" />
+		<result column="land_position" property="landPosition" />
+		<result column="land_area" property="landArea" />
+		<result column="certificate_number" property="certificateNumber" />
+		<result column="land_purpose" property="landPurpose" />
+		<result column="deal_time" property="dealTime" />
+		<result column="deal_money" property="dealMoney" />
+		<result column="remarks" property="remarks" />
+		<result column="create_time" property="createTime" />
+		<result column="creator" property="creator" />
+		<result column="update_time" property="updateTime" />
+		<result column="updater" property="updater" />
+		<result column="data_location" property="dataLocation" />
+	</resultMap>
+
+    <!-- 通用查询结果列-->
+    <sql id="Base_Column_List">
+        `id`, `transfer_company_name` AS `transferCompanyName`, `company_position` AS `companyPosition`, `transfer_phone` AS `transferPhone`, `assignee_company_name` AS `assigneeCompanyName`, `assignee_phone` AS `assigneePhone`, `land_position` AS `landPosition`, `land_area` AS `landArea`, `certificate_number` AS `certificateNumber`, `land_purpose` AS `landPurpose`, `deal_time` AS `dealTime`, `deal_money` AS `dealMoney`, `remarks`, `create_time` AS `createTime`, `creator`, `update_time` AS `updateTime`, `updater`, `data_location` AS `dataLocation`
+    </sql>
+</mapper>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="wiki.primo.generator.mybatis.plus.cae.mapper.LandRecoveryInformationMapper">
+	<!--开启二级缓存-->
+	<cache/>
+
+	<resultMap id="BaseResultMap" type="wiki.primo.generator.mybatis.plus.cae.entity.LandRecoveryInformation">
+		<id column="id" property="id" />
+		<result column="approval_company" property="approvalCompany" />
+		<result column="approval_certificate_number" property="approvalCertificateNumber" />
+		<result column="approval_time" property="approvalTime" />
+		<result column="reclaimed_land_position" property="reclaimedLandPosition" />
+		<result column="original_land_user" property="originalLandUser" />
+		<result column="original_purpose" property="originalPurpose" />
+		<result column="use_right_type" property="useRightType" />
+		<result column="land_certificate_number" property="landCertificateNumber" />
+		<result column="original_land_area" property="originalLandArea" />
+		<result column="recovered_land_area" property="recoveredLandArea" />
+		<result column="total_compensation_price" property="totalCompensationPrice" />
+		<result column="remarks" property="remarks" />
+		<result column="create_time" property="createTime" />
+		<result column="creator" property="creator" />
+		<result column="update_time" property="updateTime" />
+		<result column="updater" property="updater" />
+		<result column="data_location" property="dataLocation" />
+	</resultMap>
+
+    <!-- 通用查询结果列-->
+    <sql id="Base_Column_List">
+        `id`, `approval_company` AS `approvalCompany`, `approval_certificate_number` AS `approvalCertificateNumber`, `approval_time` AS `approvalTime`, `reclaimed_land_position` AS `reclaimedLandPosition`, `original_land_user` AS `originalLandUser`, `original_purpose` AS `originalPurpose`, `use_right_type` AS `useRightType`, `land_certificate_number` AS `landCertificateNumber`, `original_land_area` AS `originalLandArea`, `recovered_land_area` AS `recoveredLandArea`, `total_compensation_price` AS `totalCompensationPrice`, `remarks`, `create_time` AS `createTime`, `creator`, `update_time` AS `updateTime`, `updater`, `data_location` AS `dataLocation`
+    </sql>
+</mapper>

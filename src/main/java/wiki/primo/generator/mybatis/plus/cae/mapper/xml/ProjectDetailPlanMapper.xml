@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="wiki.primo.generator.mybatis.plus.cae.mapper.ProjectDetailPlanMapper">
+	<!--开启二级缓存-->
+	<cache/>
+
+	<resultMap id="BaseResultMap" type="wiki.primo.generator.mybatis.plus.cae.entity.ProjectDetailPlan">
+		<id column="id" property="id" />
+		<result column="project_id" property="projectId" />
+		<result column="project_detail_id" property="projectDetailId" />
+	</resultMap>
+
+    <!-- 通用查询结果列-->
+    <sql id="Base_Column_List">
+        `id`, `project_id` AS `projectId`, `project_detail_id` AS `projectDetailId`
+    </sql>
+</mapper>
